@@ -1,4 +1,4 @@
-# Plutus Mace Plugin (1.21.1)
+# Plutus Mace Plugin (1.21.11)
 
 A custom Paper plugin that adds the **Plutus Mace**, a cursed weapon with crimson effects and blood-based abilities.
 
