@@ -1,0 +1,13 @@
+name: PlutusMace
+version: '1.0.0'
+main: com.plutus.PlutusMacePlugin
+api-version: '1.21'
+description: A cursed mace with blood-based abilities.
+commands:
+  giveplutus:
+    description: Get the Plutus Mace
+    permission: plutus.admin
+permissions:
+  plutus.admin:
+    description: Allow giving the mace
+    default: op

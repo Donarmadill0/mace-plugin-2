@@ -1,0 +1,51 @@
+# Plutus Mace Plugin Configuration
+
+# Weapon Display Settings
+weapon-name: "<gradient:#8B0000:#FF0000><bold>Plutus Mace</bold></gradient>"
+custom-model-data: 70001
+
+# Resource Pack Settings
+resource-pack:
+  enabled: true
+  # REQUIRED: The public IP or domain of your server so players can download the pack
+  host: "your-ip-here"
+  # The port for the internal HTTP server (make sure this is open in your firewall)
+  port: 19133
+
+# Lore Lines (supports MiniMessage formatting)
+lore:
+  - "<gray>A weapon forged from blood and crimson flame."
+  - "<dark_red>⚡ Passive: Blood Toll <gray>(Self damage per attack)"
+  - "<red>⚔ Ability 1: Blood Dash <gray>(Press F / Swap Hand)"
+  - "<dark_purple>⛓ Ability 2: Blood Pact <gray>(Shift + F / Shift + Swap Hand)"
+
+# Self Damage Settings (Blood Toll)
+self-damage-mode: "EVERY_HIT"   # Options: "EVERY_HIT" or "EVERY_N_HITS"
+self-damage-amount: 1.0        # Half heart per hit
+self-damage-hit-count: 3       # Hits needed if mode is EVERY_N_HITS
+
+# Ability 1: Blood Dash Settings
+dash:
+  cooldown-seconds: 10
+  forward-impulse: 1.8
+  upward-impulse: 0.25
+  damage-radius: 4.0
+  damage-amount: 3.0
+  sound-pitch: 0.8
+
+# Ability 2: Blood Pact (Damage Link) Settings
+pact:
+  cooldown-seconds: 25
+  duration-seconds: 10
+  link-radius: 15.0
+  max-targets: 3
+
+# Particle Visual Intensity
+particle-density: 1.0
+
+# Sound Effects (Bukkit Sound Enum Names)
+sounds:
+  dash: "ENTITY_WITHER_SHOOT"
+  pact-cast: "ENTITY_WITHER_AMBIENT"
+  pact-link: "BLOCK_CHAIN_PLACE"
+  toll-trigger: "ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH"
